@@ -1,0 +1,17 @@
+﻿
+namespace ModelSecurity.Models
+{
+    public class RolFormPermit
+    {
+        public int Id { get; set; }
+        public int RolId { get; set; }
+        public int PermissionId { get; set; }
+        public int FormId { get; set; }
+        public bool IsDeleted { get; set; }
+
+        // Relaciones
+        public Rol? Rol { get; set; }
+        public Form? Form { get; set; }
+        public Permission? Permission { get; set; }
+    }
+}
